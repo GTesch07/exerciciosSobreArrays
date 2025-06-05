@@ -14,9 +14,12 @@ public class MainPessoa {
 
         System.out.println("Total de pessoas: " + listaDePessoas.size());
 
+        System.out.println("Primeira pessoa da lista: " + listaDePessoas.get(0).getNome());
+            //Pode ser utilizado o getFirst()
+
             //Percorre a lista de pessoas e a exibe, : = igual ao for classico.
         for (Pessoa listaDePessoa : listaDePessoas) {
-            System.out.println(listaDePessoa);
+            System.out.println("Nome: " + listaDePessoa.getNome() + "\nIdade: " + listaDePessoa.getIdade());
         }
 
     }
